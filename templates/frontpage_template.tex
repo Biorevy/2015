@@ -1,0 +1,79 @@
+\documentclass[11pt]{article}
+\usepackage[danish]{babel}
+\usepackage{vmargin}
+\setpapersize{A4}
+%argumenter:{hleftmargini}{htopmargini}{hrightmargini}{hbottommargini}{headheight}{headsep}{footheight}{footskip}
+\setmarginsrb{20mm}{15mm}{20mm}{20mm}{12pt}{11mm}{0pt}{11mm}
+\usepackage[T1]{fontenc}                 % æøåÆØÅ
+\usepackage{color}                       % farver
+\usepackage{metalogo}                    % logoer. FLERE!
+\usepackage[utf8]{inputenc}
+\usepackage{fontspec}
+\usepackage{amsmath}                     % Matematiske kommandoer
+\usepackage{amssymb}                     % Matematiske symboler
+
+%-----------------------------------------------------%
+%                   KOMMANDOER                        %
+%-----------------------------------------------------%
+
+\addtolength{\topmargin}{-10pt}
+\addtolength{\textheight}{20pt}
+
+\newfontfamily\stencilfont{Stardos Stencil}
+
+\newfont{\cmfnt}{ecssdc10.pk at 50pt}
+\newfont{\cmfntt}{ecssdc10.pk at 30pt}
+\newfont{\cmfnttt}{ecssdc10.pk at 20pt}
+\newfont{\frfont}{eclq8.pk at 80pt}
+\newfont{\frfontii}{eclq8.pk at 30pt}
+
+\parindent=0pt
+\parskip=5pt
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%		          Start dokument          		%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\thispagestyle{empty}
+
+\begin{flushright}
+	{\tiny <+TOPQUOTE+>}
+\end{flushright}
+\hrule
+\begin{center}
+  {\fontsize{80}{1ex}{\stencilfont{\uppercase{<+REVUENAME+>}}}} \\
+  \vspace{1cm}
+  {\fontsize{20}{1ex}{\stencilfont{\uppercase{<+SUBTITLE+>}}}}
+\vspace{2cm}
+
+{\cmfntt{Ver. <+VERSION+>}}\\ %\Huge{\textbf{$|5+i\sqrt{11}|$}}}}\\
+\vspace{5mm}
+{\cmfnttt{\today}}\\
+\vspace{1cm}
+%de næste versions numre er:
+%
+\end{center}
+
+
+\begin{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% INDLEDENDE MORALPRÆDIKEN
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{center}
+\vfill
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FORSIDEBILLEDE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%\begin{center}
+%\epsfig{file=60meterhest.eps,width=5cm}\\
+%\end{center}
+
+\vfill
+Årets \TeX hæfte er sat i \XeLaTeX.
+\begin{center}
+	{\tiny <+BOTTOMQUOTE+>}
+\end{center}
+\end{document}
